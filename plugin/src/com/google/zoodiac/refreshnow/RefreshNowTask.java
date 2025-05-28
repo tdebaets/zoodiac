@@ -133,8 +133,8 @@ class RefreshNowTask extends TimerTask {
     }
   }
   
-  void logInfo(String message) {
-    ILog log = Platform.getLog(getClass());
+  static void logInfo(String message) {
+    ILog log = Platform.getLog(RefreshNowTask.class);
     log.log(new Status(Status.INFO, "com.google.zoodiac", message));
   }
 
